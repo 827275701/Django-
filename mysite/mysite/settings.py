@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cmdb',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +75,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+'''
+    使用数据库是毫无疑问的，django通过自带的ORM框架操作数据库，并且自带轻量级的sqlite3数据库
+    下面是对数据库的设置：
+        1、首先在上面的INSTALLIED_APPS中注册app，加入'cmdb',即可,
+            不注册，数据库就不知道该给哪个app创建表。
+        2、在下面DATABASE中配置数据库相关的参数，如果使用自带的sqlite，不需要修改
+'''
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.sqlite3',  #这一行指定数据库类型
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), #自带轻量级数据库，先使用这个
     }
 }
 

@@ -13,6 +13,22 @@
         <input type="submit" value="提交"/>
     </form>
 
+    <hr />
+    <h1 style="...">用户展示</h1>
+        <thead>
+            <th>用户名</th>
+            <th>密码</th><br>
+        </thead>
+
+        <tbody>
+            {% for line in data %}
+                <tr>
+                    <td>{{ line.user }}</td>
+                    <td>{{ line.pwd }}</td><br>
+                </tr>
+            {% endfor %}
+        </tbody>
+
     <script src="/static/js/jquery-1.12.4.js"></script>
 </body>
 </html>
