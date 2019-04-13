@@ -3,15 +3,11 @@ from django.shortcuts import HttpResponse
 from cmdb import models
 # Create your views here.
 
-
-
 def index(request):
     '''
     :param request: 这个参数必须有，名字类似以self的默认规则，可以改
                     他封装了用户请求的所有内容
     :return: 回复请求端的内容
-
-
     1、不能直接返回字符串，必须被封装起来，这是Django的规则，不是python,
         返回时使用from django.shortcuts import HttpResponse
 
@@ -37,4 +33,11 @@ def index(request):
             2、添加数据到数据库
             3、进行数据库其他操作
     '''
+
+    '''
+        一个快捷函数：render()
+            「载入模板，填充上下文，再返回由它生成的 HttpResponse 对象」
+             是一个非常常用的操作流程。于是 Django 提供了一个快捷函数，我们用它来重写 index() 视图：
+    '''
     return render(request, "index.html", {"data": user_list})
+
