@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-
 '''
     创建 user pwd  两个字段，分别用来保存用户名和密码
     
