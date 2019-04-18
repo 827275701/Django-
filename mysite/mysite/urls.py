@@ -21,6 +21,6 @@ urlpatterns = [
     #path(r'index/',views.index),
     #url(r'index/',views.index),
     url('cmdb/', include('cmdb.urls')),
-    url('', include('cmdb.urls')),
+    url('android/', include('android.urls'))
 
 ]
