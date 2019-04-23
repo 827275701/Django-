@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import HttpResponse
 
 def admin_index(request):
     return render(request, "admin/admin.html", )
