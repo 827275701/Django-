@@ -18,3 +18,6 @@ def android_person_info(request):
 
 def android_history(request):
     return HttpResponse('test_history')
+
+def android_add_user(request):
+    return HttpResponse("test_add_user")

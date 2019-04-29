@@ -9,4 +9,6 @@ urlpatterns = [
     url('now_data', views.android_now_data),
     url('person_info', views.android_person_info),
     url('history', views.android_history),
+    url('add_user', views.android_add_user),
+
 ]
