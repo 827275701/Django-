@@ -18,8 +18,6 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     url('admin/', admin.site.urls),
-    #path(r'index/',views.index),
-    #url(r'index/',views.index),
     url('cmdb/', include('cmdb.urls')),
     url('android/', include('android.urls'))
 

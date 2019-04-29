@@ -16,11 +16,5 @@ def android_now_data(request):
 def android_person_info(request):
     return HttpResponse('lhwie&001&20&man&2015-2-14&1777-10-21&xxxxxxxxx')
 
-def android_t_history(request):
-    return HttpResponse('test_t_history')
-
-def android_h_history(request):
-    return HttpResponse('test_h_history')
-
-def android_g_history(request):
-    return HttpResponse('test_g_history')
+def android_history(request):
+    return HttpResponse('test_history')
