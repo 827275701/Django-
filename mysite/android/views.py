@@ -8,13 +8,13 @@ def android_login(request):
     return HttpResponse('yes')
 
 def android_choose_spot(request):
-    return HttpResponse('lhw&001')
+    return HttpResponse('name=lhw&no=001')
 
 def android_now_data(request):
-    return HttpResponse('24&s37&2.1')
+    return HttpResponse('wendu=24&shidu=37&qiti=2.1')
 
 def android_person_info(request):
-    return HttpResponse('lhwie&001&20&man&18165151223')
+    return HttpResponse('name=lhwie&no=001&age=20&sex=man&phone=18165151223')
 
 def android_history(request):
     return HttpResponse('20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20')
