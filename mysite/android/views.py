@@ -17,7 +17,7 @@ def android_person_info(request):
     return HttpResponse('name=lhwie&no=001&age=20&sex=man&phone=18165151223')
 
 def android_history(request):
-    return HttpResponse('20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20&20')
+    return HttpResponse('20&21&20&21&20&21&21&21&21&21&20&20&20&22&20&25&20&25&20&20&21&22&23&24')
 
 def android_add_user(request):
     return HttpResponse("test_add_user")
