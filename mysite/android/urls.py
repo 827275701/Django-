@@ -14,5 +14,6 @@ urlpatterns = [
     url('delete_user', views.android_delete_user),
     url('select_user', views.android_select_user),
     url('change_other_password', views.android_admin_change_other_password),
+    url('test_choose_spot', views.android_test_choose_spot),
 
 ]
