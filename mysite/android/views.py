@@ -44,9 +44,9 @@ def android_admin_change_other_password(request):
     print(request.body)
     return HttpResponse('Successful')
 
-def android_test_choose_spot(requesr):
+def android_get_root(requesr):
     print(requesr.body)
-    return HttpResponse('{user_info:{username:路浩伟，no:876941}, room:{博览室1，博览室2}}')
+    return HttpResponse('博览室1&博览室2')
 
 
 
