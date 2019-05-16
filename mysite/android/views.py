@@ -20,9 +20,21 @@ def android_person_info(request):
     print(request.body)
     return HttpResponse('name=lhwie&no=001&age=20&sex=man&phone=18165151223')
 
-def android_history(request):
+def android_history_day(request):
     print(request.body)
     return HttpResponse('qiti=20&21&20&21&20&21&21&21&21&21&20&20&20&22&20&25&20&25&20&20&21&22&23&24')
+
+def android_history_week(request):
+    print(request.body)
+    return HttpResponse('qiti=20&21&20&21&20&21&21')
+
+def android_history_month(request):
+    print(request.body)
+    return HttpResponse('qiti=20&21&20&21&20&21&21&21&21&21&20&20&20&22&20&25&20&25&20&20&21&22&23&24&20&20&21&22&23&24')
+
+def android_history_year(request):
+    print(request)
+    return HttpResponse('qiti=20&21&20&21&20&21&21&21&21&21&20&20')
 
 def android_add_user(request):
     print(request.body)
@@ -44,9 +56,14 @@ def android_admin_change_other_password(request):
     print(request.body)
     return HttpResponse('Successful')
 
-def android_get_root(requesr):
+def android_get_room(requesr):
     print(requesr.body)
     return HttpResponse('博览室1&博览室2')
+
+def android_echo_log(request):
+    print(request)
+    return  HttpResponse('log  test&log  test&log  test&log  test&log  test')
+
 
 
 
