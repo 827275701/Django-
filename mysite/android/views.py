@@ -56,12 +56,24 @@ def android_admin_change_other_password(request):
     print(request.body)
     return HttpResponse('Successful')
 
+def android_admin_change_other_name(request):
+    print(request.body)
+    return HttpResponse("Successful")
+
+def android_admin_change_other_no(request):
+    print(request.body)
+    return HttpResponse("Successful")
+
+def android_admin_change_other_sex(request):
+    print(request.body)
+    return HttpResponse("Successful")
+
 def android_get_room(requesr):
     print(requesr.body)
     return HttpResponse('博览室1&博览室2')
 
 def android_echo_log(request):
-    print(request)
+    print(request.body)
     return  HttpResponse('log  test&log  test&log  test&log  test&log  test')
 
 
