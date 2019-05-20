@@ -68,14 +68,21 @@ def android_admin_change_other_sex(request):
     print(request.body)
     return HttpResponse("Successful")
 
-def android_get_room(requesr):
-    print(requesr.body)
+def android_get_room(request):
+    print(request.body)
     return HttpResponse('博览室1&博览室2')
 
 def android_echo_log(request):
     print(request.body)
     return  HttpResponse('log  test&log  test&log  test&log  test&log  test')
 
+def android_change_other_info(request):
+    print(request.body)
+    return HttpResponse('Successful')
+
+def android_get_person(request):
+    print(request.body)
+    return HttpResponse('name=路浩伟&no=87694&sex=男&phone=18165151223&pwd=123456')
 
 
 
