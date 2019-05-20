@@ -38,7 +38,7 @@ def android_history_year(request):
 
 def android_add_user(request):
     print(request.body)
-    return HttpResponse('test_add_user')
+    return HttpResponse('Successful')
 
 def android_change_password(request):
     print(request.body)
