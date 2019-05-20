@@ -21,6 +21,9 @@ urlpatterns = [
     url('add_user', views.android_add_user),  #yes
     url('delete_user', views.android_delete_user),
     url('select_user', views.android_select_user),
+    url('get_person', views.android_get_person),
+    url('change_other_info', views.android_change_other_info),
+
     url('change_other_password', views.android_admin_change_other_password),
     url('change_other_name', views.android_admin_change_other_name),
     url('change_other_no', views.android_admin_change_other_no),
