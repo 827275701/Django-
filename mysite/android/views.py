@@ -82,7 +82,7 @@ def android_change_other_info(request):
 
 def android_get_person(request):
     print(request.body)
-    return HttpResponse('name=路浩伟&no=87694&sex=男&phone=18165151223&pwd=123456')
+    return HttpResponse('name=路浩伟&no=123456&sex=男&phone=18165151223&pwd=123456')
 
 
 
