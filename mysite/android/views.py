@@ -74,7 +74,7 @@ def android_get_room(request):
 
 def android_echo_log(request):
     print(request.body)
-    return  HttpResponse('log  test&log  test&log  test&log  test&log  test')
+    return  HttpResponse('log  test\nlog  test\nlog  test\nlog  test\nlog  test')
 
 def android_change_other_info(request):
     print(request.body)
