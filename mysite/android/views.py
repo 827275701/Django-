@@ -70,7 +70,7 @@ def android_admin_change_other_sex(request):
 
 def android_get_room(request):
     print(request.body)
-    return HttpResponse('博览室1&博览室2')
+    return HttpResponse('room_id=room1&room_name=博览室1&room_id=room2&room_name=博览室2')
 
 def android_echo_log(request):
     print(request.body)
