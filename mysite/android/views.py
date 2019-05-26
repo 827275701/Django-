@@ -84,5 +84,10 @@ def android_get_person(request):
     print(request.body)
     return HttpResponse('name=路浩伟&no=123456&sex=男&phone=18165151223&pwd=123456')
 
+def android_select_room(request):
+    print(request.body)
+    return HttpResponse('name=lhwie&no=001&phone=18165151223&name=lhwie&no=001&phone=18165151223&name=lhwie&no=001&phone=18165151223')
 
-
+def android_change_room_info(request):
+    print(request.body)
+    return HttpResponse('Successful')
