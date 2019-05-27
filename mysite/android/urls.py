@@ -33,7 +33,7 @@ urlpatterns = [
     url('get_room', views.android_get_room),#获得当前已存在博览室的 名称和ID
     url('select', views.android_select_room),  # 获得当前已存在博览室的 名称和ID和位置
     url('change_room_info', views.android_change_room_info),  # 获得当前已存在博览室的 名称和ID和位置
-
+    url('get_the_room_info', views.android_get_the_room_info),
 
     #日志相关
     url('echo_log', views.android_echo_log), #查看日志
