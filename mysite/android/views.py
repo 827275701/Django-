@@ -6,7 +6,7 @@ def admin_index(request):
 
 def android_login(request):
     print(request.body)
-    return HttpResponse('yes')
+    return HttpResponse('Successful')
 
 def android_choose_spot(request):
     print(request.body)
