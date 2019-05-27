@@ -86,7 +86,7 @@ def android_get_person(request):
 
 def android_select_room(request):
     print(request.body)
-    return HttpResponse('name=lhwie&no=001&phone=18165151223&name=lhwie&no=001&phone=18165151223&name=lhwie&no=001&phone=18165151223')
+    return HttpResponse('name=博览室1&no=001&pos=6b220&name=博览室2&no=002&pos=6b220&name=博览室3&no=003&pos=6b220')
 
 def android_change_room_info(request):
     print(request.body)
