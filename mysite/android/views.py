@@ -10,7 +10,7 @@ def android_login(request):
 
 def android_choose_spot(request):
     print(request.body)
-    return HttpResponse('name=lhw&no=001')
+    return HttpResponse('num=5&name=lhw&no=001')
 
 def android_now_data(request):
     print(request.body)
@@ -68,9 +68,9 @@ def android_admin_change_other_sex(request):
     print(request.body)
     return HttpResponse("Successful")
 
-def android_get_room(request):
-    print(request.body)
-    return HttpResponse('room_id=room1&room_name=博览室1&room_id=room2&room_name=博览室2')
+# def android_get_room(request):
+#     print(request.body)
+#     return HttpResponse('room_id=room1&room_name=博览室1&room_id=room2&room_name=博览室2')
 
 def android_echo_log(request):
     print(request.body)
